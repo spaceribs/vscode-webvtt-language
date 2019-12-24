@@ -1,0 +1,35 @@
+{
+  "name": "webvtt-language",
+  "displayName": "WebVTT Language",
+  "description": "Language Support for WebVTT",
+  "version": "0.0.1",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.41.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "vtt",
+        "aliases": [
+          "WebVTT",
+          "vtt"
+        ],
+        "extensions": [
+          ".vtt"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "vtt",
+        "scopeName": "source.vtt",
+        "path": "./syntaxes/vtt.tmLanguage.json"
+      }
+    ]
+  }
+}

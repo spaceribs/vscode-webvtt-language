@@ -1,0 +1,138 @@
+WEBVTT
+
+REGION
+id:editor-comments
+regionanchor:0.2%,0%
+viewportanchor:10.321%,0%
+
+STYLE
+::cue {
+  background-image: linear-gradient(to bottom, dimgray, lightgray);
+  color: papayawhip;
+}
+/* Style blocks cannot use blank lines nor "dash dash greater than" */
+
+info
+00:00:00.000 --> 00:00:01.000
+{
+    "type": "INFO",
+    "title": "PlopDown Test",
+    "url": "https://github.com/spaceribs/plopdown-video",
+    "license": "CC0",
+    "authors": ["spaceribs"]
+}
+
+NOTE
+This file was written by Jill. I hope
+you enjoy reading it. Some things to
+bear in mind:
+- I was lip-reading, so the cues may
+not be 100% accurate
+- I didn’t pay too close attention to
+when the cues should start or end.
+
+1
+00:00:03.000 --> 00:00:04.000
+{
+    "type": "PLOP",
+    "top": 15,
+    "left": 10,
+    "width": 40,
+    "desc": "<p>This is the first caption, you can display it for as long as you want.</p>",
+    "icons": [
+        {
+            "top": 48,
+            "left": 24,
+            "size": 150,
+            "rotate": 20,
+            "emoji": "🧗‍"
+        },
+        {
+            "top": 83,
+            "left": 84,
+            "size": 130,
+            "rotate": 0,
+            "emoji": "😱"
+        }
+    ]
+}
+
+NOTE I’m not sure the timing is right on the following cue.
+
+2
+00:00:04.000 --> 00:00:05.000
+{
+    "type": "PLOP",
+    "top": 45,
+    "left": 20,
+    "width": 40,
+    "desc": "<p>This is the <b>second caption</b>, you can <i>format text</i> using the editor.</p>",
+    "icons": [
+        {
+            "top": 73,
+            "left": 48,
+            "size": 170,
+            "rotate": 12,
+            "emoji": "🗒"
+        },
+        {
+            "top": 60,
+            "left": 86,
+            "size": 107,
+            "rotate": 40,
+            "emoji": "✍️"
+        }
+    ]
+}
+
+3
+00:00:04.000 --> 00:00:08.000
+{
+    "type": "PLOP",
+    "top": 25,
+    "left": 40,
+    "width": 40,
+    "desc": "<p>This is the third caption, it's shown alongside the second.</p>",
+    "icons": [
+        {
+            "top": 64,
+            "left": 50,
+            "size": 147,
+            "rotate": 0,
+            "emoji": "🤹‍♂️‍"
+        }
+    ]
+}
+
+00:00:00.000 --> 00:00:08.000
+<c>Yellow!</c>
+<i>Yellow!</i>
+<u>Yellow!</u>
+<b>Yellow!</b>
+<u>Yellow!</u>
+<ruby>Yellow! <rt>Yellow!</rt></ruby>
+<v Kathryn>Yellow!</v>
+<lang en>Yellow!</lang>
+<c.loud>Yellow!</c>
+<i.loud>Yellow!</i>
+<u.loud>Yellow!</u>
+<b.loud>Yellow!</b>
+<u.loud>Yellow!</u>
+<ruby.loud>Yellow! <rt.loud>Yellow!</rt></ruby>
+<v.loud Kathryn>Yellow!</v>
+<lang.loud en>Yellow!</lang>
+<lang en-GB>Cyan!</lang>
+<v Kathryn>I like lime.</v>
+
+00:00:00.000 --> 00:00:08.000
+<00:00:16.000> <c>This</c>
+<00:00:18.000> <c>can</c>
+<00:00:20.000> <c>match</c>
+<00:00:22.000> <c>:past/:future</c>
+<00:00:24.000>
+
+00:00:08.000 --> 00:00:16.000 region:editor-comments
+Yellow!
+
+00:00:10.000 --> 00:00:16.000 region:scroll
+Over here it’s Cyan!
