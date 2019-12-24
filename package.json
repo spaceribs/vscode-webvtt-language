@@ -2,6 +2,12 @@
   "name": "webvtt-language",
   "displayName": "WebVTT Language",
   "description": "Language Support for WebVTT",
+  "author": "Aaron Brewer (https://keybase.io/spaceribs)",
+  "publisher": "spaceribs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/spaceribs/vscode-webvtt-language.git"
+  },
   "version": "0.0.1",
   "license": "MIT",
   "engines": {
