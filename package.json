@@ -2,17 +2,24 @@
   "name": "webvtt-language",
   "displayName": "WebVTT Language",
   "description": "Language Support for WebVTT",
-  "author": "Aaron Brewer (https://keybase.io/spaceribs)",
+  "authors": [
+    "Spaceribs (https://keybase.io/spaceribs)",
+    "Proudust (https://proudust.github.io/)"
+  ],
   "publisher": "spaceribs",
   "repository": {
     "type": "git",
     "url": "https://github.com/spaceribs/vscode-webvtt-language.git"
   },
-  "version": "0.0.2",
+  "scripts": {
+    "package": "vsce package",
+    "publish": "vsce publish"
+  },
+  "version": "0.0.3",
   "license": "MIT",
   "icon": "icon.png",
   "engines": {
-    "vscode": "^1.41.0"
+    "vscode": "^1.50.0"
   },
   "categories": [
     "Programming Languages"
@@ -38,5 +45,8 @@
         "path": "./syntaxes/vtt.tmLanguage.json"
       }
     ]
+  },
+  "devDependencies": {
+    "vsce": "^1.81.1"
   }
 }
