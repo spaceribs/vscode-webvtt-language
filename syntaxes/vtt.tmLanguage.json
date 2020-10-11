@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
   "name": "WebVTT",
-  "firstLineMatch": "^WEBVTT$",
+  "firstLineMatch": "^WEBVTT([ \t].+)?$",
   "patterns": [
     { "include": "#doctype" },
     { "include": "#comment" },
@@ -15,7 +15,7 @@
       "name": "constant.numeric"
     },
     "doctype": {
-      "patterns": [{ "name": "keyword.control", "match": "^WEBVTT$" }]
+      "patterns": [{ "name": "keyword.control", "match": "^WEBVTT([ \t].+)?$", "captures": {"1": { "name": "comment.header" } } }]
     },
     "comment": {
       "patterns": [
