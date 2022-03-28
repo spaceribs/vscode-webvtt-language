@@ -14,4 +14,8 @@ All notable changes to the "webvtt-language" extension will be documented in thi
 
 ## 0.0.4
 
-- Switching logo to official WebVTT logo, adding license (spaceribs)
+- Switching logo to official WebVTT logo, adding license (@spaceribs)
+
+## 0.0.5
+
+- Security updates alongside vsce v2
