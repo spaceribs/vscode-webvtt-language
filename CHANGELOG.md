@@ -19,3 +19,7 @@ All notable changes to the "webvtt-language" extension will be documented in thi
 ## 0.0.5
 
 - Security updates alongside vsce v2
+
+## 0.0.6
+
+- Add highlighting of cue settings

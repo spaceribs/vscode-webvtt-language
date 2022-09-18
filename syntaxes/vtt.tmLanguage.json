@@ -15,7 +15,13 @@
       "name": "constant.numeric"
     },
     "doctype": {
-      "patterns": [{ "name": "keyword.control", "match": "^WEBVTT([ \t].+)?$", "captures": {"1": { "name": "comment.header" } } }]
+      "patterns": [
+        {
+          "name": "keyword.control",
+          "match": "^WEBVTT([ \t].+)?$",
+          "captures": { "1": { "name": "comment.header" } }
+        }
+      ]
     },
     "comment": {
       "patterns": [
@@ -68,7 +74,7 @@
     "timeline": {
       "patterns": [
         {
-          "begin": "^((?:\\d{2}:)?\\d{2}:\\d{2}.\\d{3}) (-->) ((?:\\d{2}:)?\\d{2}:\\d{2}.\\d{3})( region(:)(.*))?$",
+          "begin": "^((?:\\d{2}:)?\\d{2}:\\d{2}.\\d{3}) (-->) ((?:\\d{2}:)?\\d{2}:\\d{2}.\\d{3})( .*)?$",
           "end": "^\\n",
           "patterns": [{ "include": "#metadata" }, { "include": "#vtt-html" }],
           "beginCaptures": {
@@ -89,9 +95,26 @@
                 }
               ]
             },
-            "4": { "name": "keyword.control" },
-            "5": { "name": "keyword.operator" },
-            "6": { "name": "variable" }
+            "4": {
+              "patterns": [
+                {
+                  "begin": "\\b(vertical|line|position|size|align|region)(:)([^\\s]+)",
+                  "beginCaptures": {
+                    "1": { "name": "keyword.control" },
+                    "2": { "name": "keyword.operator" },
+                    "3": {
+                      "name": "variable.parameter",
+                      "patterns": [
+                        {
+                          "include": "#numeric"
+                        }
+                      ]
+                    }
+                  },
+                  "end": "\\s"
+                }
+              ]
+            }
           }
         }
       ]
