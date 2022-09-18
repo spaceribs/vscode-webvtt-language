@@ -13,7 +13,8 @@
   },
   "scripts": {
     "package": "vsce package",
-    "publish": "vsce publish"
+    "publish": "vsce publish",
+    "vsce": "vsce"
   },
   "version": "0.0.6",
   "license": "MIT",
@@ -47,6 +48,6 @@
     ]
   },
   "devDependencies": {
-    "vsce": "^2.7.0"
+    "vsce": "^2.11.0"
   }
 }
