@@ -15,7 +15,7 @@
     "package": "vsce package",
     "publish": "vsce publish"
   },
-  "version": "0.0.5",
+  "version": "0.0.6",
   "license": "MIT",
   "icon": "logo/logo.png",
   "engines": {
